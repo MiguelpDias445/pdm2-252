@@ -61,39 +61,21 @@ class EquipeProjeto {
 
 void main() {
 
-
  Dependente dependente1 = new Dependente("Dependente1");
  Dependente dependente2 = new Dependente("Dependente1");
  Dependente dependente3 = new Dependente("Dependente1");
-
 
  Funcionario funcionario1 = new Funcionario("Funcionario1", [dependente1]);
  Funcionario funcionario2 = new Funcionario("Funcionario2", [dependente2]);
  Funcionario funcionario3 = new Funcionario("Funcionario3", [dependente3]);
 
-
  List<Funcionario> funcionarioList = [funcionario1, funcionario2, funcionario3];
-
-
  EquipeProjeto equipe = new EquipeProjeto("App de Compras", funcionarioList);
-
-
  String jsonStr = jsonEncode(equipe.toJson());
 
-
  print(jsonStr);
-
-
- // 1. Criar varios objetos Dependentes
- // 2. Criar varios objetos Funcionario
- // 3. Associar os Dependentes criados aos respectivos
- //    funcionarios
- // 4. Criar uma lista de Funcionarios
- // 5. criar um objeto Equipe Projeto chamando o metodo
- //    contrutor que da nome ao projeto e insere uma
- //    coleção de funcionario
- // 6. Printar no formato JSON o objeto Equipe Projeto.
 }
+
 
 
 
